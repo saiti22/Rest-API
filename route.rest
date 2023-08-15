@@ -1,0 +1,31 @@
+GET http://localhost:3000/livros
+
+###
+
+GET http://localhost:3000/livros/1
+
+###
+
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+    "id": 1,
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "num_paginas": 350,
+    "isbn": "Código isbn",
+    "editora": "Howlings"
+}
+
+###
+
+DELETE http://localhost:3000/livros/1
+
+###
+
+PATCH http://localhost:3000/livros/1
+Content-Type: application/json
+
+{
+    "num_paginas": 400
+}

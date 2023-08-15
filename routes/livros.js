@@ -18,7 +18,7 @@ router.get('/:id', getLivro, (req, res) => {
 })
 //Creating one
 router.post('/', async (req, res) => {
-    const livro = new Livro({
+    const livro = new Livros({
         id: req.body.id,
         titulo: req.body.titulo,
         num_paginas: req.body.num_paginas,
